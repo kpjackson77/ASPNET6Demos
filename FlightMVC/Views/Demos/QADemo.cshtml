@@ -1,0 +1,14 @@
+﻿@model QuestionAnswer
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@await Html.PartialAsync("_QAPartialView")
+
+<partial name="_QAPartialView"/>
+
+@await Component.InvokeAsync("QuestionAnswer", new {q ="six times nine", a="forty two"})
+
+<vc:question-answer q="six times nine" a="forty two"></vc:question-answer>

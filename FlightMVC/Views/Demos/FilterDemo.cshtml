@@ -1,0 +1,10 @@
+﻿@inject ILoggerFactory loggerFactory
+@{
+  ViewData["Title"] = "FilterDemo";
+
+  var logger = loggerFactory.CreateLogger("View");
+  logger.LogInformation("Within View");
+}
+
+<h1>FilterDemo</h1>
+
